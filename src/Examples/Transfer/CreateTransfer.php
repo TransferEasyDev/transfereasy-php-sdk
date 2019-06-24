@@ -28,6 +28,7 @@ $param = [
     "send_amount" => 0,
     "send_currency" => "CNH",
     "purpose" => "留学",
-    "memo" => "测试"
+    "memo" => "测试",
+    "out_trade_id" => "your_trade_id",
 ];
 $tran->createTransfer($param);

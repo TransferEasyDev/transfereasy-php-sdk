@@ -12,7 +12,8 @@ include_once '../../Api/Iat.php';
 $iat = new IAT();
 
 $param = [
-    "no" => "iat_no"
+    "no" => "iat_no",
+//    "out_trade_id" => "your_trade_id",
 ];
 
 $iat->getIat($param);

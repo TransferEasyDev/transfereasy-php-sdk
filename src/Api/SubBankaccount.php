@@ -13,25 +13,35 @@ include_once 'config.php';
 
 class SubBankaccount {
 
-    public function comCreateSubBankaccount($params, $withFiles) {
-        $request = new Request(IS_NOT_JSON);
-        $request->post('/account/company/sub_bank_account', $params, $withFiles);
+    public function createSubBankaccount($params, $withFiles) {
+        $request = new Request(IS_JSON);
+        $request->post('/account/sub_bank_account', $params, $withFiles);
     }
 
-    public function comUpdateSubBankaccount($params, $withFiles) {
-        $request = new Request(IS_NOT_JSON);
-        $request->put('/account/company/sub_bank_account', $params, $withFiles);
+    public function updateSubBankaccount($params, $withFiles) {
+        $request = new Request(IS_JSON);
+        $request->put('/account/sub_bank_account', $params, $withFiles);
     }
 
-    public function indCreateSubBankaccount($params, $withFiles) {
-        $request = new Request(IS_NOT_JSON);
-        $request->post('/account/individual/sub_bank_account', $params, $withFiles);
-    }
-
-    public function indUpdateSubBankaccount($params, $withFiles) {
-        $request = new Request(IS_NOT_JSON);
-        $request->put('/account/individual/sub_bank_account', $params, $withFiles);
-    }
+//    public function comCreateSubBankaccount($params, $withFiles) {
+//        $request = new Request(IS_NOT_JSON);
+//        $request->post('/account/company/sub_bank_account', $params, $withFiles);
+//    }
+//
+//    public function comUpdateSubBankaccount($params, $withFiles) {
+//        $request = new Request(IS_NOT_JSON);
+//        $request->put('/account/company/sub_bank_account', $params, $withFiles);
+//    }
+//
+//    public function indCreateSubBankaccount($params, $withFiles) {
+//        $request = new Request(IS_NOT_JSON);
+//        $request->post('/account/individual/sub_bank_account', $params, $withFiles);
+//    }
+//
+//    public function indUpdateSubBankaccount($params, $withFiles) {
+//        $request = new Request(IS_NOT_JSON);
+//        $request->put('/account/individual/sub_bank_account', $params, $withFiles);
+//    }
 
     public function getProgress($params) {
         $request = new Request(IS_NOT_JSON);

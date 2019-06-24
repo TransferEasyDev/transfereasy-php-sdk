@@ -12,6 +12,7 @@ include_once '../../Api/Exchange.php';
 $exc = new Exchange();
 
 $param = [
-    "no" => "exchange_no"
+    "no" => "exchange_no",
+//    "out_trade_id" => "your_trade_id",
 ];
 $exc->getExchange($param);

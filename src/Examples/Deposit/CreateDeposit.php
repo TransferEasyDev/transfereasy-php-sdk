@@ -15,7 +15,9 @@ $param = [
     "currency" => "HKD",
     "amount" => "1000000",
     "payer_bank_acc_number" => "TEST-666",
-    "escrow_bank_acc_number" => "20143304"
+//    "payer_bank_acc_no" => "",
+    "escrow_bank_acc_number" => "20143304",
+//    "out_trade_id" => "your_trade_id",
 ];
 
 $dep->createDeposit($param);

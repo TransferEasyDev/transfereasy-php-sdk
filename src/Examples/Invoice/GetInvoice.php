@@ -12,7 +12,8 @@ include_once '../../Api/Invoice.php';
 $invo = new Invoice();
 
 $param = [
-    "no" => "invoice_no"
+    "no" => "invoice_no",
+//    "out_trade_id" => "your_trade_id",
 ];
 
 $invo->getInvoice($param);

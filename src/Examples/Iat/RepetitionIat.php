@@ -13,6 +13,9 @@ $iat = new IAT();
 
 $param = [
     'no' => 'iat_no',
+//    "ex_out_trade_id" => "",
+//    "new_out_trade_id" => "",
+
 ];
 
 $iat->repetitionIat($param);

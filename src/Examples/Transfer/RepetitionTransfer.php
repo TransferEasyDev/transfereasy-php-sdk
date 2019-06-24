@@ -14,5 +14,7 @@ $tran = new Transfer();
 
 $param = [
     'no' => 'transfer_no',
+    //    "ex_out_trade_id" => "",
+    //    "new_out_trade_id" => "",
 ];
 $tran->repetitionTransfer($param);

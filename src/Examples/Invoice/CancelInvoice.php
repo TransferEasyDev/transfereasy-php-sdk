@@ -13,6 +13,7 @@ $invo = new Invoice();
 
 $param = [
     'no' => 'invoice_no',
+//    "out_trade_id" => "your_trade_id",
 ];
 
 $invo->cancelInvoice($param);

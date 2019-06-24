@@ -13,6 +13,7 @@ $dep = new Deposit();
 
 $param = [
     "no" => "deposit_no",
+//    "out_trade_id" => "your_trade_id",
 ];
 
 $dep->getDeposit($param);

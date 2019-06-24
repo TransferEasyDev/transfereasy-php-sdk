@@ -43,4 +43,9 @@ class Account {
         $request->put('/account/individual/identification', $params, $withFiles);
     }
 
+    public function development($params) {
+        $request = new Request(IS_NOT_JSON);
+        $request->post('/development', $params);
+    }
+
 }

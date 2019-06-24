@@ -18,6 +18,16 @@ class BankAccount {
         $request->post('/account/bank_account', json_encode($params));
     }
 
+    public function updateBacc($params) {
+        $request = new Request(IS_JSON);
+        $request->put('/account/bank_account', json_encode($params));
+    }
+
+    public function deleteBacc($params) {
+        $request = new Request(IS_JSON);
+        $request->del('/account/bank_account', $params);
+    }
+
     public function createBaccs($params) {
         $request = new Request(IS_JSON);
         $request->post('/account/bank_accounts', json_encode($params));
